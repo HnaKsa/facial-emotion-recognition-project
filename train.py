@@ -1,6 +1,6 @@
-from models import model_setup , resnet_model , efficientnet_model
-from utils import *
-
+from models import resnet_model , efficientnet_model
+from utils import get_dataloaders , get_transforms , all
+from config import batch_size , train_dir , val_dir , epochs , lr
 for epoch in range(epochs):
     # 🔁 Phase 1: Training
     model.train()

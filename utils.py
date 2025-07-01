@@ -12,13 +12,7 @@ import numpy as np
 import os
 from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
-
-batch_size = 64
-epochs = 20
-lr = 0.0001
-train_dir = r"D:\facial-emotion-recognition-cnn-dataset\train"
-val_dir = r"D:\facial-emotion-recognition-cnn-dataset\test"
-
+    
 def get_transforms():
     transform_train = transforms.Compose([
         transforms.Grayscale(),
