@@ -14,7 +14,7 @@ from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
 from collections import Counter
 from torchvision import datasets
-from utils import get_dataloaders , get_transforms , train_loader , val_loader , val_data , train_data , class_names 
+from utils import get_dataloaders , get_transforms
 from config import batch_size , epochs , lr , train_dir , val_dir
 from resnet_model import EmotionResNet34
 from efficientnet_model import EmotionEfficientNetB0

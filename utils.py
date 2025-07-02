@@ -38,4 +38,5 @@ def get_dataloaders(train_dir, val_dir, batch_size):
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_data, batch_size=batch_size)
     class_names = train_data.classes
-    return train_loader, val_loader, train_data.classes
+    return train_loader, val_loader, train_data.classes 
+
