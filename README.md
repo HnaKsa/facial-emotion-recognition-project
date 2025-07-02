@@ -6,19 +6,19 @@ This project implements a Facial Emotion Recognition system using deep learning 
 
 ## 📂 Project Structure
 
-facial-emotion-recognition/   
-├── models.py # Custom CNN models (ResNet34, EfficientNetB0) 
+facial-emotion-recognition/  
+|── models.py # Custom CNN models (ResNet34, EfficientNetB0)  
     |── model_setup.py  
     |── resnet_model.py  
     |── efficientnet_model.py  
-├── train.py # Training loop and model saving  
-├── evaluate.py # Model evaluation, classification report, confusion matrix  
-├── predict.py # Single image prediction  
-├── utils.py # Transforms, dataloaders, config, helper functions  
-├── config.py # Hyperparameters and paths  
-├── requirements.txt # Python dependencies  
-├── README.md # Project documentation  
-└── assets/ # Output plots and visualizations (optional) 
+|── train.py # Training loop and model saving  
+|── evaluate.py # Model evaluation, classification report, confusion matrix  
+|── predict.py # Single image prediction  
+|── utils.py # Transforms, dataloaders, config, helper functions  
+|── config.py # Hyperparameters and paths  
+|── requirements.txt # Python dependencies  
+|── README.md # Project documentation  
+|── assets/ # Output plots and visualizations (optional)  
     |── gradcam.py  
 |── main.py # the whole code in one place  
 
