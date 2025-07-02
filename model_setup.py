@@ -20,15 +20,13 @@ from config import batch_size , epochs , lr , train_dir , val_dir
 from resnet_model import EmotionResNet34
 from efficientnet_model import EmotionEfficientNetB0
 
-# بارگذاری dataset بدون transform برای شمردن تعداد نمونه‌ها
+
 raw_dataset = datasets.ImageFolder(train_dir)
 labels = [label for _, label in raw_dataset.imgs]
 
-# شمارش تعداد نمونه در هر کلاس
 label_counts = Counter(labels)
 num_classes = len(raw_dataset.classes)
 
-# تبدیل به Tensor و محاسبه وزن معکوس
 class_counts = torch.tensor([label_counts[i] for i in range(num_classes)], dtype=torch.float)
 class_weights = 1.0 / class_counts
 class_weights = class_weights / class_weights.sum()

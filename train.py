@@ -63,3 +63,8 @@ for epoch in range(epochs):
 
     print(f"Epoch {epoch+1} | Train Loss: {total_loss:.4f}, Acc: {train_accuracy:.2f}% | "
           f"Val Loss: {val_loss:.4f}, Acc: {val_accuracy:.2f}%")
+
+# 💾 Save Model
+
+torch.save(model.state_dict(), "emotion_model_resnet34.pth")
+print("Model saved as emotion_model_resnet34.pth")

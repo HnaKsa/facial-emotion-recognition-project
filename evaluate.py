@@ -19,6 +19,35 @@ from config import batch_size , epochs , lr , train_dir , val_dir
 from resnet_model import EmotionResNet34
 from efficientnet_model import EmotionEfficientNetB0
 from model_setup import raw_dataset , labels , label_counts , num_classes , class_counts , class_weights , device , model , criterion , optimizer , scheduler , train_accuracies , train_losses , val_accuracies , val_losses 
+
+# 📊 Training Curves
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.plot(train_losses, label='Train Loss')
+plt.title('Training Loss')
+plt.grid(True)
+plt.subplot(1, 2, 2)
+plt.plot(train_accuracies, label='Train Accuracy', color='green')
+plt.title('Training Accuracy')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("training_curves_resnet.png")
+plt.show()
+
+# 📊 Curves for test dataset
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.plot(val_losses, label='Test Loss')
+plt.title('Testing Loss')
+plt.grid(True)
+plt.subplot(1, 2, 2)
+plt.plot(val_accuracies, label='Test Accuracy', color='green')
+plt.title('Testing Accuracy')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("testing_curves_resnet.png")
+plt.show()
+
 # 📌 Evaluation
 
 model.eval()
