@@ -8,15 +8,15 @@ This project implements a Facial Emotion Recognition system using deep learning 
 
 facial-emotion-recognition/
 │
-├── models.py # Custom CNN models (ResNet34, EfficientNetB0)
-├── train.py # Training loop and model saving
-├── evaluate.py # Model evaluation, classification report, confusion matrix
-├── predict.py # Single image prediction
-├── utils.py # Transforms, dataloaders, config, helper functions
-├── config.py # Hyperparameters and paths
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── assets/ # Output plots and visualizations (optional)
+├── models.py # Custom CNN models (ResNet34, EfficientNetB0)  
+├── train.py # Training loop and model saving  
+├── evaluate.py # Model evaluation, classification report, confusion matrix  
+├── predict.py # Single image prediction  
+├── utils.py # Transforms, dataloaders, config, helper functions  
+├── config.py # Hyperparameters and paths  
+├── requirements.txt # Python dependencies  
+├── README.md # Project documentation  
+└── assets/ # Output plots and visualizations (optional)  
 
 
 ---
@@ -45,7 +45,7 @@ unzip fer2013.zip -d fer2013_data
 
 ## 🛠️ Installation
 Clone the repository and install dependencies:  
-git clone https://github.com/yourusername/facial-emotion-recognition.git  
+git clone https://github.com/hnaksa/facial-emotion-recognition.git  
 cd facial-emotion-recognition  
 pip install -r requirements.txt  
 
