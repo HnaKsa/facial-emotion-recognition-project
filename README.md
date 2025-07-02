@@ -40,73 +40,75 @@ FER2013 is a public dataset of 48x48 pixel grayscale images categorized into 7 e
 
 To download the dataset:
 
-kaggle datasets download -d msambare/fer2013
+kaggle datasets download -d msambare/fer2013  
 unzip fer2013.zip -d fer2013_data
 
-🛠️ Installation
-Clone the repository and install dependencies:
-git clone https://github.com/yourusername/facial-emotion-recognition.git
-cd facial-emotion-recognition
-pip install -r requirements.txt
+## 🛠️ Installation
+Clone the repository and install dependencies:  
+git clone https://github.com/yourusername/facial-emotion-recognition.git  
+cd facial-emotion-recognition  
+pip install -r requirements.txt  
 
-⚙️ Configuration
-Edit config.py to change training parameters:
-batch_size = 64
-epochs = 20
-lr = 0.0001
-train_dir = r"D:\facial-emotion-recognition-cnn-dataset\train"
-val_dir = r"D:\facial-emotion-recognition-cnn-dataset\test"
+## ⚙️ Configuration
+Edit config.py to change training parameters:  
+batch_size = 64  
+epochs = 20  
+lr = 0.0001  
+train_dir = r"D:\facial-emotion-recognition-cnn-dataset\train"  
+val_dir = r"D:\facial-emotion-recognition-cnn-dataset\test"  
 
-🚀 Training
-To train the model:
-python train.py
-This saves:
-emotion_model_resnet34.pth – trained model
-Training/validation loss and accuracy plots
+## 🚀 Training
+To train the model:  
+python train.py  
 
-📈 Evaluation
-To evaluate the model:
-python evaluate.py
-This prints:
-Classification report
-Confusion matrix
+This saves:  
+emotion_model_resnet34.pth – trained model  
+Training/validation loss and accuracy plots  
 
-🔍 Single Image Prediction
-To predict on a new image:
-python predict.py --img_path path/to/image.jpg
+## 📈 Evaluation
+To evaluate the model:  
+python evaluate.py  
 
-🔥 Grad-CAM Visualization
-Grad-CAM highlights important regions in the image:
-python gradcam.py --img_path path/to/image.jpg
+This prints:  
+Classification report  
+Confusion matrix  
 
-📦 Requirements
-txt
-Copy
-Edit
-torch
-torchvision
-matplotlib
-seaborn
-scikit-learn
-pillow
-numpy
-pytorch-grad-cam
-Install with:
-pip install -r requirements.txt
+## 🔍 Single Image Prediction
+To predict on a new image:  
+python predict.py --img_path path/to/image.jpg  
 
-📸 Example Results
-![conConfusion Matrix](image.png)
-![Grad-CAM Visualization](image-1.png)
+## 🔥 Grad-CAM Visualization
+Grad-CAM highlights important regions in the image:  
+python gradcam.py --img_path path/to/image.jpg  
 
-📄 License
-This project is released under the MIT License.
+## 📦 Requirements
+txt  
+Copy  
+Edit  
+torch  
+torchvision  
+matplotlib  
+seaborn  
+scikit-learn  
+pillow  
+numpy  
+pytorch-grad-cam  
+Install with:  
+pip install -r requirements.txt  
 
-🙌 Acknowledgements
-FER2013 dataset on Kaggle
-PyTorch documentation
-Papers with Code & torchvision models
+## 📸 Example Results
+![conConfusion Matrix](image.png)  
+![Grad-CAM Visualization](image-1.png)  
 
-💡 Future Improvements
-Add early stopping
-Support multi-model ensemble
-Export to ONNX or TorchScript for deployment
+## 📄 License
+This project is released under the MIT License.  
+
+## 🙌 Acknowledgements
+FER2013 dataset on Kaggle  
+PyTorch documentation  
+Papers with Code & torchvision models  
+
+## 💡 Future Improvements
+Add early stopping  
+Support multi-model ensemble  
+Export to ONNX or TorchScript for deployment  
