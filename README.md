@@ -40,7 +40,6 @@ FER2013 is a public dataset of 48x48 pixel grayscale images categorized into 7 e
 
 To download the dataset:
 
-```bash
 kaggle datasets download -d msambare/fer2013
 unzip fer2013.zip -d fer2013_data
 
