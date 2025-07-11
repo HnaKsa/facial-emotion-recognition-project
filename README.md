@@ -45,7 +45,7 @@ unzip fer2013.zip -d fer2013_data
 
 🛠️ Installation
 Clone the repository and install dependencies:
-git clone https://github.com/yourusername/facial-emotion-recognition.git
+git clone https://github.com/HnaKsa/facial-emotion-recognition-project
 cd facial-emotion-recognition
 pip install -r requirements.txt
 
