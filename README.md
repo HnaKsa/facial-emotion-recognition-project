@@ -47,19 +47,14 @@ To download the dataset:
 kaggle datasets download -d msambare/fer2013  
 unzip fer2013.zip -d fer2013_data
 
-<<<<<<< HEAD
-🛠️ Installation
-Clone the repository and install dependencies:
-git clone https://github.com/HnaKsa/facial-emotion-recognition-project
-cd facial-emotion-recognition
-pip install -r requirements.txt
+
 =======
 ## 🛠️ Installation
 Clone the repository and install dependencies:  
 git clone https://github.com/HnaKsa/facial-emotion-recognition-project  
 cd facial-emotion-recognition  
 pip install -r requirements.txt  
->>>>>>> refs/remotes/origin/main
+
 
 ## ⚙️ Configuration
 Edit config.py to change training parameters:  
